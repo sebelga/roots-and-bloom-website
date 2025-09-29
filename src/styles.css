@@ -1,6 +1,19 @@
-
 @import "tailwindcss";
 @plugin "daisyui";
+
+@plugin "daisyui" {
+  themes:
+    pastel --default,
+    dim --prefersdark;
+}
+@plugin "daisyui/theme" {
+  name: "pastel";
+  default: true;
+  --color-primary: #c66f54;
+  --color-primary-content: #fff;
+  --color-secondary: #e7c5b6;
+  --color-base-300: #eff3e9;
+}
 
 @layer base {
   a {
@@ -10,4 +23,3 @@
     @apply underline; /* Applies underline on hover */
   }
 }
-
