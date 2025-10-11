@@ -9,7 +9,7 @@
 @plugin "daisyui/theme" {
   name: "pastel";
   default: true;
-  --color-primary: #c66f54;
+  --color-primary: #315f4f;
   --color-primary-content: #fff;
   --color-secondary: #e7c5b6;
   --color-base-300: #eff3e9;
@@ -22,4 +22,16 @@
   a:hover {
     @apply underline; /* Applies underline on hover */
   }
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  src: url("/fonts/AmaticSC-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+}
+
+@theme {
+  --font-amatic: "Amatic SC", sans-serif;
 }
